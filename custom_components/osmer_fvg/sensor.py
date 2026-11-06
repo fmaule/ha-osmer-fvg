@@ -58,6 +58,7 @@ async def async_setup_entry(
             key=sensor_code,
             name=sensor_config["name"],
             native_unit_of_measurement=sensor_config["unit"],
+            suggested_display_precision=sensor_config.get("suggested_display_precision"),
             device_class=sensor_config["device_class"],
             state_class=sensor_config["state_class"],
             icon=sensor_config["icon"],

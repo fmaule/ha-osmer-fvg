@@ -55,6 +55,7 @@ MONITORED_SENSORS = {
     },
     "U": {
         "name": "Umidità relativa",
+        "suggested_display_precision": 0,
         "device_class": SensorDeviceClass.HUMIDITY,
         "state_class": SensorStateClass.MEASUREMENT,
         "unit": "%",
